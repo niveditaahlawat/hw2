@@ -271,6 +271,9 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
    </widget>
    <widget class="QDoubleSpinBox" name="hw2_score">
     <property name="geometry">
