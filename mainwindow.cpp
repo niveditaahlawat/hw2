@@ -95,3 +95,17 @@ void MainWindow::on_hw8_score_valueChanged(double arg1)
 {
     ui->hw8_slider->setValue(arg1);
 }
+
+
+void MainWindow::on_mid1_score_valueChanged(double arg1)
+{
+    ui->mid1slider->setValue(arg1);
+}
+void MainWindow::on_mid2_score_valueChanged(double arg1)
+{
+    ui->mid2slider->setValue(arg1);
+}
+void MainWindow::on_final_score_valueChanged(double arg1)
+{
+    ui->finalslider->setValue(arg1);
+}

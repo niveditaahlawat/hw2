@@ -40,6 +40,11 @@ private slots:
     void on_hw7_score_valueChanged(double arg1);
     void on_hw8_score_valueChanged(double arg1);
 
+    void on_mid1_score_valueChanged(double arg1);
+    void on_mid2_score_valueChanged(double arg1);
+    void on_final_score_valueChanged(double arg1);
+
+
 private:
     Ui::MainWindow *ui;
 };
