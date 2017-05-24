@@ -54,3 +54,18 @@ void MainWindow::on_hw8_slider_valueChanged(int value)
 {
     ui->hw8_score->setValue(value);
 }
+
+void MainWindow::on_mid1slider_valueChanged(int value)
+{
+    ui->mid1_score->setValue(value);
+}
+
+void MainWindow::on_mid2slider_valueChanged(int value)
+{
+    ui->mid2_score->setValue(value);
+}
+
+void MainWindow::on_finalslider_valueChanged(int value)
+{
+    ui->final_score->setValue(value);
+}

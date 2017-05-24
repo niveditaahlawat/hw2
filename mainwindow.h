@@ -27,6 +27,10 @@ private slots:
     void on_hw7_slider_valueChanged(int value);
     void on_hw8_slider_valueChanged(int value);
 
+    void on_mid1slider_valueChanged(int value);
+    void on_mid2slider_valueChanged(int value);
+    void on_finalslider_valueChanged(int value);
+
 private:
     Ui::MainWindow *ui;
 };

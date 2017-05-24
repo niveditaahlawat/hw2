@@ -284,6 +284,9 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
    </widget>
    <widget class="QDoubleSpinBox" name="hw3_score">
     <property name="geometry">
@@ -293,6 +296,9 @@
       <width>68</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="hw4_score">
@@ -304,6 +310,9 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
    </widget>
    <widget class="QDoubleSpinBox" name="hw5_score">
     <property name="geometry">
@@ -313,6 +322,9 @@
       <width>68</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="hw6_score">
@@ -324,6 +336,9 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
    </widget>
    <widget class="QDoubleSpinBox" name="hw7_score">
     <property name="geometry">
@@ -334,6 +349,9 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
    </widget>
    <widget class="QDoubleSpinBox" name="hw8_score">
     <property name="geometry">
@@ -343,6 +361,9 @@
       <width>68</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
     </property>
    </widget>
    <widget class="QLabel" name="course_label">
@@ -475,6 +496,9 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
    </widget>
    <widget class="QDoubleSpinBox" name="mid2_score">
     <property name="geometry">
@@ -485,6 +509,9 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
    </widget>
    <widget class="QDoubleSpinBox" name="final_score">
     <property name="geometry">
@@ -494,6 +521,9 @@
       <width>221</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
     </property>
    </widget>
    <widget class="QRadioButton" name="schemaA_button">
