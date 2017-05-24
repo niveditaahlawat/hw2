@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+   // QObject::connect(ui->dropdown_box, SIGNAL(valueChanged(int)), this, SLOT(update_overall(int)));
 }
 
 MainWindow::~MainWindow()
@@ -14,6 +14,16 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+/*
+void MainWindow::update_overall(int) {
+   double score = 30.0;
+    // double score = static_cast<double>(unused);
+   // if(ui->dropdown_box->currentText()=="PIC 10C: Advanced Programming")
+   //     score = 30.0;
+    ui->score_output_label->setText(QString::number(score));
+    return;
+}
+*/
 
 void MainWindow::on_hw1_slider_valueChanged(int value)
 {

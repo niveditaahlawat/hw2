@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="hw1_label">
     <property name="geometry">
@@ -393,6 +396,21 @@
       <height>26</height>
      </rect>
     </property>
+    <item>
+     <property name="text">
+      <string>PIC 10C: Advanced Programming</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LS 3: Introduction to Molecular Biology</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHEM 14D: Organic Reactions and Pharmaceuticals</string>
+     </property>
+    </item>
    </widget>
    <widget class="QLabel" name="mid1_label">
     <property name="geometry">
@@ -521,6 +539,9 @@
       <width>221</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
     </property>
     <property name="maximum">
      <double>100.000000000000000</double>
