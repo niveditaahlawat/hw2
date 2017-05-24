@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <vector>
 
 namespace Ui {
 class MainWindow;
@@ -16,10 +17,9 @@ public:
     ~MainWindow();
 
 signals:
-   // void compute_overall();
 
 public slots:
-   // void update_overall(int);
+    void update_overall(int);
 
 private slots:
     void on_hw1_slider_valueChanged(int value);
@@ -47,9 +47,6 @@ private slots:
     void on_mid1_score_valueChanged(double arg1);
     void on_mid2_score_valueChanged(double arg1);
     void on_final_score_valueChanged(double arg1);
-
-
-    //void on_dropdown_box_currentTextChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
