@@ -19,8 +19,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(ui->mid2slider, SIGNAL(valueChanged(int)), this, SLOT(update_overall(int)));
     QObject::connect(ui->finalslider, SIGNAL(valueChanged(int)), this, SLOT(update_overall(int)));
 
-    QObject::connect(ui->hw1_score, SIGNAL(valueChanged(double)), this, SLOT(update_overall(int)));
-
 
 }
 
@@ -41,21 +39,14 @@ void MainWindow::update_overall(int) {
     if (ui->mid2_score->value() > higher_mid_score)
         higher_mid_score = ui->mid2_score->value();
 
-    if(ui->dropdown_box->currentText()=="PIC 10C: Advanced Programming") {
-        // Schema A
-            overall_score = (25*hw_score_sum/800) + (0.20*ui->mid1_score->value()) + (0.20*ui->mid2_score->value()) + (0.35*ui->final_score->value());
-        // Schema B
-        // overall_score = (0.25*hw_score_sum) + (0.30*higher_mid_score) + (0.44*ui->final_score->value());
-
+    // Schema A
+    if(ui->dropdown_box->currentText()=="Schema A") {
+        overall_score = (25*hw_score_sum/800) + (0.20*ui->mid1_score->value()) + (0.20*ui->mid2_score->value()) + (0.35*ui->final_score->value());
+     }
+    // Schema B
+    else if(ui->dropdown_box->currentText()=="Schema B") {
+        overall_score = (25*hw_score_sum/800) + (0.30*higher_mid_score) + (0.44*ui->final_score->value());
     }
-    /*
-    if(ui->dropdown_box->currentText()=="LS 3: Introduction to Molecular Biology") {
-        overall_score = 40.0;
-    }
-    if(ui->dropdown_box->currentText()=="CHEM 14D: Organic Reactions and Pharmaceuticals") {
-        overall_score = 80.0;
-    }
-    */
 
     ui->score_output_label->setText(QString::number(overall_score));
     return;
